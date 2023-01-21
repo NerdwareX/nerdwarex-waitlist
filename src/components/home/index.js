@@ -1,0 +1,13 @@
+export { default as About } from "./About";
+export { default as Button } from "./Button";
+export { default as Courses } from "./Courses";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as JoinWaitlistForm } from "./JoinWaitlistForm";
+export { default as LearnMoreVideo } from "./LearnMoreVideo";
+export { default as LogoLink } from "./LogoLink";
+export { default as Navbar } from "./Navbar";
+export { default as Partners } from "./Partners";
+export { default as Service } from "./Service";
+export { default as Testimonials } from "./Testimonials";
+export { default as Topics } from "./Topics";

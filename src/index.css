@@ -1,0 +1,51 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Jost:wght@400;500;600&display=swap");
+
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #3551a0;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(224.06deg, #1687d9 14.4%, #16c8d9 94.95%);
+}
+
+.home-bg {
+  background: linear-gradient(180deg, #000074 0%, rgba(0, 58, 116, 0.9) 100%);
+  background-repeat: no-repeat;
+}
+
+.btn-primary {
+  background: linear-gradient(224.06deg, #1687d9 14.4%, #16c8d9 94.95%);
+}
+
+.btn-secondary {
+  background: linear-gradient(180deg, #1687d9 0%, #1626d9 100%);
+}
+
+.show-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel-container {
+  @apply flex overflow-x-auto mt-8 mb-6 scroll-smooth w-full show-scroll snap-mandatory;
+}

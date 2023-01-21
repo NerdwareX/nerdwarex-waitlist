@@ -1,1 +1,1 @@
-# nerdwarex-waitlist
+A landing page built with react and tailwind css.
