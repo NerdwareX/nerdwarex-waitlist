@@ -1,1 +1,1 @@
-# nerdwarex-betatest
+# nerdwarex-waitlist
