@@ -15,9 +15,7 @@ const Testimonials = () => {
       </h3>
       <img src={quoteIcon} alt="quote icon" />
       <p className="font-medium lg:text-xl text-base text-white">
-        I bought the html class and i have to say my experience was was above
-        pleasant. The tutor were so detailed that i could easily understand even
-        a first timer will understand without so much hassle
+        "I recently purchased the HTML class and my experience was more than satisfactory. The tutors were incredibly detailed, making it easy for me to understand. Even a first-time learner would be able to grasp the material without much difficulty."
       </p>
       <div className="flex items-center gap-2">
         <div className="lg:w-[75px] lg:h-[75px] w-12 h-12 bg-[#d9d9d9] rounded-full"></div>
