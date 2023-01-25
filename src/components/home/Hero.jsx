@@ -22,8 +22,7 @@ const Hero = () => {
             </h2>
           </div>
           <p className="text-lg text-[#e0e0e0]">
-            A solution for easy, secure and flexible way to learn online
-            anywhere, anytime, anyplace.
+              A solution for an easy, secure, and flexible way to learn online from anywhere, anytime, and any place.
           </p>
           <CTA />
         </motion.div>
