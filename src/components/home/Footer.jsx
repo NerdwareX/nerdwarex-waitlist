@@ -51,9 +51,9 @@ const Footer = () => {
           <h3 className="lg:text-2xl text-xl overflow-y-hidden">Explore</h3>
           <ul className="flex flex-col text-lg gap-2 lg:gap-4">
             <li className="mb-2 overflow-y-hidden">About</li>
-            <li className="mb-2 overflow-y-hidden">Meet our teachers</li>
+            <li className="mb-2 overflow-y-hidden">Tutor Lounge</li>
             <li className="mb-2 overflow-y-hidden">Courses</li>
-            <li className=" overflow-y-hidden">Our plan</li>
+            <li className=" overflow-y-hidden">Roadmap</li>
           </ul>
         </div>
         {/* col3 */}
