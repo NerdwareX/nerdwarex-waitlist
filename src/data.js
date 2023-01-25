@@ -1,28 +1,25 @@
 export const imageCarousel = [
   {
-    image: require("./assets/logo2.png"),
-    desc: "Data science",
-  },
-  {
-    image: require("./assets/logo1.png"),
-    desc: "Design",
-  },
-  {
-    image: require("./assets/logo4.png"),
-    desc: "Photography",
+    image: require("./assets/logo5.png"),
+    desc: "Blockchain Development",
   },
   {
     image: require("./assets/logo3.png"),
-    desc: "Crypto",
-  },
-  {
-    image: require("./assets/logo5.png"),
-    desc: "Python",
+    desc: "Cryptocurrency",
   },
   {
     image: require("./assets/logo6.png"),
-    desc: "Web",
+    desc: "Web development",
   },
+  {
+    image: require("./assets/logo2.png"),
+    desc: "Web3",
+  },
+  {
+    image: require("./assets/logo1.png"),
+    desc: "UI/UX Design",
+  },
+  
 ];
 
 export const courseCategories = [
