@@ -34,7 +34,7 @@ const Footer = () => {
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <i className="ri-twitter-fill text-[#042e71]" href="https://t.me/NerdwareX"></i>
+                <a href="https://t.me/NerdwareX"><i className="ri-twitter-fill text-[#042e71]"></i></a>
               </motion.div>
               {/*Telegram*/}
               <motion.div
