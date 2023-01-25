@@ -81,7 +81,7 @@ const Navbar = () => {
             id={'connect'}
             whileTap={{ scale: 0.9 }}
           >
-            Connect
+           Wallet Connect 
           </motion.button>
         </nav>
       </header>
@@ -124,7 +124,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActive(1)}
             >
-              Teacher
+              Tutors
             </li>
             <li
               className={`text-white cursor-pointer ${
