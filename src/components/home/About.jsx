@@ -25,9 +25,7 @@ const About = () => {
             <span className="block pt-4 overflow-y-hidden">NERDWAREX</span>
           </h2>
           <p className="text-lg text-[#e0e0e0]">
-            Nerdwarex is introducing the first of it's kind a crypto payment
-            based online learning platform to further improve security, loss of
-            funds and many more
+            Nerdwarex is introducing the first of its kind crypto payment-based online learning platform to further improve security, reduce the risk of funds loss, and more.
           </p>
           <motion.button
             className="px-[23px] py-2 btn-primary rounded-[20px] text-white "
