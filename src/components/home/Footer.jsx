@@ -34,7 +34,7 @@ const Footer = () => {
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <i className="ri-twitter-fill text-[#042e71]"></i>
+                <i className="ri-twitter-fill text-[#042e71]" href="https://t.me/NerdwareX"></i>
               </motion.div>
               {/*Telegram*/}
               <motion.div
@@ -51,7 +51,7 @@ const Footer = () => {
           <h3 className="lg:text-2xl text-xl overflow-y-hidden">Explore</h3>
           <ul className="flex flex-col text-lg gap-2 lg:gap-4">
             <li className="mb-2 overflow-y-hidden">About</li>
-            <li className="mb-2 overflow-y-hidden">Tutor Lounge</li>
+            <li className="mb-2 overflow-y-hidden">Tutors Lounge</li>
             <li className="mb-2 overflow-y-hidden">Courses</li>
             <li className=" overflow-y-hidden">Roadmap</li>
           </ul>
