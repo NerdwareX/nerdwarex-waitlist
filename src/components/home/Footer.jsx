@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="text-lg">Follow us</p>
             <div className="flex items-center gap-3 ">
               <motion.div
-                className="text-3xl cursor-pointer w-[50px] h-[50px] bg-white grid place-items-center rounded-full"
+                className="text-3xl cursor-pointer w-[40px] h-[40px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
                <a href="https://instagram.com/NerdwareX"> <i className="ri-instagram-fill text-[#042e71]"></i></a>
