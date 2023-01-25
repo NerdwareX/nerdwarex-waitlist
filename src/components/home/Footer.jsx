@@ -19,29 +19,29 @@ const Footer = () => {
             <p className="text-lg">Follow us</p>
             <div className="flex items-center gap-3 ">
               <motion.div
-                className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
+                className="text-3xl cursor-pointer w-[50px] h-[50px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <i className="ri-instagram-fill text-[#042e71]"></i>
+               <a href="https://instagram.com/NerdwareX> <i className="ri-instagram-fill text-[#042e71]"></i></a>
               </motion.div>
               <motion.div
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <i className="ri-linkedin-fill text-[#042e71]"></i>
+                <a href="linkedin.com"><i className="ri-linkedin-fill text-[#042e71]"></i></a>
               </motion.div>
               <motion.div
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <a href="https://t.me/NerdwareX"><i className="ri-twitter-fill text-[#042e71]"></i></a>
+                <a href="https://twitter.com/nerdwarex"><i className="ri-twitter-fill text-[#042e71]"></i></a>
               </motion.div>
               {/*Telegram*/}
               <motion.div
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <i className="ri-telegram-fill text-[#042e71]"></i>
+               <a href="https://t.me/Nerdwarex"> <i className="ri-telegram-fill text-[#042e71]"></i></a>
               </motion.div>
             </div>
           </div>
