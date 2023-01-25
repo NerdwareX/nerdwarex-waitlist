@@ -11,7 +11,7 @@ const Testimonials = () => {
       data-aos-delay="150"
     >
       <h3 className="lg:text-[40px] text-3xl overflow-y-hidden font-semibold text-white">
-        What Our Learners Say About Us
+        Testimonials
       </h3>
       <img src={quoteIcon} alt="quote icon" />
       <p className="font-medium lg:text-xl text-base text-white">
