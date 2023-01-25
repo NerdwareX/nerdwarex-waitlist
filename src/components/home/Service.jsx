@@ -28,6 +28,7 @@ const Service = () => {
           </h2>
           <p className="text-lg text-[#e0e0e0]">
             Interested in becoming a tutor or instructor on NerdwareX. NerdWareX is an easy, fast, and reliable platform for teaching and learning.
+          </p>
           <motion.button
             className="px-[23px] py-2 btn-primary rounded-[20px] text-white "
             whileTap={{ scale: 0.9 }}
