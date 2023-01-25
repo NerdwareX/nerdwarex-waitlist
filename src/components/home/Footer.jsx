@@ -28,7 +28,7 @@ const Footer = () => {
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
                 whileHover={{ scale: 0.9 }}
               >
-                <a href="linkedin.com"><i className="ri-linkedin-fill text-[#042e71]"></i></a>
+                <a href="https://www.linkedin.com/company/nerdwarex"><i className="ri-linkedin-fill text-[#042e71]"></i></a>
               </motion.div>
               <motion.div
                 className="text-3xl cursor-pointer w-[58px] h-[58px] bg-white grid place-items-center rounded-full"
