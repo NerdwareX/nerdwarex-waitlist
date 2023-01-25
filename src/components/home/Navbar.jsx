@@ -81,7 +81,7 @@ const Navbar = () => {
             id={'connect'}
             whileTap={{ scale: 0.9 }}
           >
-           Wallet Connect 
+           Connect 
           </motion.button>
         </nav>
       </header>
