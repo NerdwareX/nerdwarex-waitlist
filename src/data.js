@@ -1,7 +1,7 @@
 export const imageCarousel = [
   {
     image: require("./assets/logo5.png"),
-    desc: "Blockchain Development",
+    desc: "Blockchain",
   },
   {
     image: require("./assets/logo3.png"),
@@ -18,6 +18,10 @@ export const imageCarousel = [
   {
     image: require("./assets/logo1.png"),
     desc: "UI/UX Design",
+  },
+  {
+    image: require("./assets/logo1.png"),
+    desc: "Crypto Trading",
   },
   
 ];
