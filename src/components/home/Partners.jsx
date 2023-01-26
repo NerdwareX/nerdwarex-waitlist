@@ -18,7 +18,7 @@ const Partners = () => {
         <img src={MicrosoftLogo} alt="microsoft.svg" />
         <img src={WebflowLogo} alt="webflow.svg" />
         <img src={CosmicLogo} alt="cosmic.svg" />
-        <img src={kryptoextractLogo} alt="kryptoextract.png" />
+     {/*<img src={kryptoextractLogo} alt="kryptoextract.png" /> /}
       </div>
     </section>
   );
