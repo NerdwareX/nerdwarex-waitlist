@@ -6,7 +6,7 @@ import WebflowLogo from "../../assets/partners/webflow.svg";
 
 const Partners = () => {
   return (
-    <section className="2xl:px-[186px] lg:px-20 px-8 bg-[#D5D5D5] py-[30px]">
+    <section className="2xl:px-[186px] lg:px-20 px-8 bg-[#FFFFFF] py-[30px]">
       <div className="text-center mb-5">
         <h2 className="text-[32px] font-semibold">Our Partners</h2>
         <p>Trusted by leading companies in the technology and blockchain industry</p>
