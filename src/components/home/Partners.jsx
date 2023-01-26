@@ -3,7 +3,7 @@ import GoogleLogo from "../../assets/partners/google.svg";
 import MicrosoftLogo from "../../assets/partners/microsoft.svg";
 import React from "react";
 import WebflowLogo from "../../assets/partners/webflow.svg";
-import kryptoextractLogo from "../../assets/partners/kryptoextract.png";
+{/*import kryptoextractLogo from "../../assets/partners/kryptoextract.png"; /}
 
 const Partners = () => {
   return (
