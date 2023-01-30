@@ -2,35 +2,53 @@ import { Button, LogoLink } from "../home";
 import { FormGroup, Input, Label } from "../FormElements";
 import { HiOutlineMail, HiOutlineUserAdd } from "react-icons/hi";
 
-import React from "react";
-import { useFormik } from "formik";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
-const JoinWaitlistForm = () => {
-  const validateForm = (values) => {
-    const errors = {};
-    if (!values.fullname) {
-      errors.fullname = "Please enter your full name";
-    } else if (!values.email) {
-      errors.email = "Please enter your email";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-      errors.email = "Invalid email address";
+const JoinWaitlistForm = ({ status, message, onValidated, handleClose }) => {
+  const [submitting, setSubmitting] = useState(false);
+  const [email, setEmail] = useState("");
+  const [fullname, setFullName] = useState("");
+  const [errors, setErrors] = useState({ fullname: "", email: "" });
+
+  const validateForm = () => {
+    if (!fullname) {
+      setErrors({ ...errors, fullname: "Please enter your full name" });
+      return false;
+    } else if (!email) {
+      setErrors({ fullname: "", email: "Please enter your email" });
+      return false;
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
+      setErrors({ fullname: "", email: "Invalid email address" });
+      return false;
+    } else {
+      setErrors({ fullname: "", email: "" });
+      return true;
     }
-    return errors;
   };
 
-  const formikSubmit = (values) => {
-    alert(JSON.stringify(values, null, 2));
-    window.location = "/";
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    if (validateForm()) {
+      onValidated({
+        MERGE0: email,
+        MERGE1: fullname,
+      });
 
-  const formik = useFormik({
-    initialValues: { email: "", fullname: "" },
-    validate: (values) => validateForm(values),
-    onSubmit: (values, { resetForm }) => {
-      setTimeout(formikSubmit(values), 3000);
-      resetForm();
-    },
-  });
+      if (status === "success") {
+        toast.success(message);
+        setEmail("");
+        setFullName("");
+        handleClose();
+      } else if (status === "sending") {
+        toast.info(message, { autoClose: 300 });
+      } else if (status === "error") {
+        toast.error(message, { autoClose: 1000 });
+      }
+    }
+    setSubmitting(false);
+  };
 
   return (
     <>
@@ -38,7 +56,7 @@ const JoinWaitlistForm = () => {
 
       <form
         className="mt-16 mb-[33px] flex flex-col"
-        onSubmit={formik.handleSubmit}
+        onSubmit={(e) => handleSubmit(e)}
       >
         <h1 className="text-[#2B2B8B] font-semibold text-[36px] text-left mb-6">
           Join Waitlist
@@ -49,15 +67,12 @@ const JoinWaitlistForm = () => {
           <Input
             id="fullname"
             name="fullname"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.fullname}
+            onChange={(e) => setFullName(e.target.value)}
+            value={fullname}
             icon={<HiOutlineUserAdd size={30} color="#10211E40" />}
           />
           <span className="text-red-500">
-            {formik.errors.fullname &&
-              formik.touched.fullname &&
-              formik.errors.fullname}
+            {errors.fullname && errors.fullname}
           </span>
         </FormGroup>
         <FormGroup>
@@ -65,19 +80,17 @@ const JoinWaitlistForm = () => {
           <Input
             id="email"
             name="email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
             icon={<HiOutlineMail size={30} color="#10211E40" />}
           />
-          <span className="text-red-500">
-            {formik.errors.email && formik.touched.email && formik.errors.email}
-          </span>
+          <span className="text-red-500">{errors.email && errors.email}</span>
         </FormGroup>
 
         <Button
-          className="w-[300px] mx-auto disabled:bg-red-500"
-          disabled={formik.isSubmitting}
+          className="w-[300px] mx-auto"
+          type="submit"
+          disabled={submitting}
         >
           Join Waitlist
         </Button>

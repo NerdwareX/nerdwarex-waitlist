@@ -1,9 +1,10 @@
-import { Button, JoinWaitlistForm, LearnMoreVideo } from "./home";
+import { Button, LearnMoreVideo } from "./home";
 import React, { useEffect, useRef, useState } from "react";
 
 import Modal from "./Modal";
 import { motion } from "framer-motion";
 import playIcon from "../assets/play-icon.svg";
+import { MailchimpFormContainer } from "./MailchimpFormContainer";
 
 const CTA = () => {
   const [showModal, setShowModal] = useState(false);
@@ -28,7 +29,9 @@ const CTA = () => {
             setShowModal(true);
             setModalContent(
               <div className="min-h-screen w-full grid place-content-center">
-                <JoinWaitlistForm />
+                <MailchimpFormContainer
+                  handleClose={() => setShowModal(false)}
+                />
               </div>
             );
           }}
