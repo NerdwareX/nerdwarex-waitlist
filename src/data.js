@@ -1,6 +1,6 @@
 export const imageCarousel = [
   {
-    image: require("./assets/logo5.png"),
+    image: require("./assets/btc.png"),
     desc: "Blockchain",
   },
   {
