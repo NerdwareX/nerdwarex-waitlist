@@ -20,7 +20,7 @@ export const imageCarousel = [
     desc: "UI/UX Design",
   },
   {
-    image: require("./assets/trading.png"),
+    image: require("./assets/candle.png"),
     desc: "Crypto Trading",
   },
   
