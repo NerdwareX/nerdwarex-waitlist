@@ -73,7 +73,7 @@ export const courses = [
     starIcon: "ri-star-s-fill",
     rating: "4.8",
     desc: "Java, html, c++ and css beginner to pro masterclass",
-    authorImg: require("./assets/avatar.png"),
+    authorImg: require("./assets/learning.png"),
     name: "Ronald Richards",
     price: "0.000017 ETH",
     clockIcon: "ri-time-line",
