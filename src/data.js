@@ -76,7 +76,6 @@ export const courses = [
     authorImg: require("./assets/avatar.png"),
     name: "Ronald Richards",
     price: "0.000017 ETH",
-    Price: require("./assets/avatar.png"),
     clockIcon: "ri-time-line",
     bookIcon: "ri-book-3-line",
     groupIcon: "ri-group-line",
