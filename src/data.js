@@ -86,7 +86,7 @@ export const courses = [
     heartIcon: "ri-heart-3-fill",
   },
   {
-    image: require("./assets/img.png"),
+    image: require("./assets/forex.png"),
     title: "Development",
     starIcon: "ri-star-s-fill",
     rating: "4.8",
