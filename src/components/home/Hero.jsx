@@ -32,7 +32,7 @@ const Hero = () => {
           animate={{ y: [0, 40, 0], opacity: [0, 1] }}
           transition={{ type: "spring", delay: 0.5 }}
         >
-          
+          <img src={heroImg} alt="" />
         </motion.div>
       </div>
     </section>
