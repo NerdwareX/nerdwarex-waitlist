@@ -75,7 +75,7 @@ export const courses = [
     desc: "Java, html, c++ and css beginner to pro masterclass",
     authorImg: require("./assets/avatar.png"),
     name: "Ronald Richards",
-    price: "0.000017 ("./assets/avatar.png")",
+    price: "0.000017 ETH",
     clockIcon: "ri-time-line",
     bookIcon: "ri-book-3-line",
     groupIcon: "ri-group-line",
