@@ -8,11 +8,11 @@ export const imageCarousel = [
     desc: "Cryptocurrency",
   },
   {
-    image: require("./assets/logo6.png"),
+    image: require("./assets/web.png"),
     desc: "Web development",
   },
   {
-    image: require("./assets/logo2.png"),
+    image: require("./assets/web3.png"),
     desc: "Web3",
   },
   {
