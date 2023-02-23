@@ -77,8 +77,8 @@ const Navbar = () => {
 
           <motion.button
             className="px-[23px] py-2 btn-primary rounded-[20px] text-white block"
-            onClick={window['Connect']}
-            id={'connect'}
+          /*  onClick={window['Connect']}
+            id={'connect'}*/
             whileTap={{ scale: 0.9 }}
           >
            Connect 
