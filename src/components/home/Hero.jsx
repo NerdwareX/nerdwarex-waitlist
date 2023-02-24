@@ -27,6 +27,7 @@ const Hero = () => {
           <CTA />
         </motion.div>
         {/* right */}
+         <img src={heroImg} alt="hero img" />
         <motion.div
           className="md:flex lg:justify-end w-[50%] h-auto lg:w-full mx-auto"
           animate={{ y: [0, 40, 0], opacity: [0, 1] }}

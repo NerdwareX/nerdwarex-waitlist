@@ -77,8 +77,6 @@ const Navbar = () => {
             </motion.li>
           </ul>
 
-         
-
           <ConnectPopup />
         </nav>
       </header>
@@ -114,7 +112,7 @@ const Navbar = () => {
               />
             </li>
             <li
-              className={`text-white cursor-pointer ${
+              className={`text-white cursor-pointer {
                 active === 1
                   ? "border-b-2 rounded-md border-b-[#15add9] duration-300"
                   : ""
