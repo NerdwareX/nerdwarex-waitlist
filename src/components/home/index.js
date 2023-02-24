@@ -11,3 +11,4 @@ export { default as Partners } from "./Partners";
 export { default as Service } from "./Service";
 export { default as Testimonials } from "./Testimonials";
 export { default as Topics } from "./Topics";
+export { default as ConnectPopup } from "./ConnectPopup";
