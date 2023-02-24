@@ -1,10 +1,10 @@
 import { Button, LearnMoreVideo } from "./home";
-import React, { useEffect, useRef, useState } from "react";
-
+import React, { useEffect, useRef, useState, useContext } from "react";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
 import playIcon from "../assets/play-icon.svg";
 import { MailchimpFormContainer } from "./MailchimpFormContainer";
+import { WalletModal } from "../App";
 
 const CTA = () => {
   const [showModal, setShowModal] = useState(false);
@@ -20,6 +20,8 @@ const CTA = () => {
       }
     }
   }, [showModal]);
+  const { showConnectWallet } = useContext(WalletModal);
+
 
   return (
     <>
@@ -53,10 +55,11 @@ const CTA = () => {
           <span className="text-[#Fea303] font-medium">Learn More</span>
         </div>
       </div>
-
+      {/* 
       <Modal open={showModal} handleClose={() => setShowModal(false)}>
         {modalContent}
-      </Modal>
+      </Modal> */}
+      {showConnectWallet && <Modal/>}
     </>
   );
 };

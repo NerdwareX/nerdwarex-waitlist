@@ -1,13 +1,22 @@
-import React, { useState } from "react";
-
+import React, { useState, useContext } from "react";
 import { LogoLink } from "../home";
 import { motion } from "framer-motion";
+
+import { WalletModal } from "../../App";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const [active, setActive] = useState(0);
 
   const showAllLinks = () => setShowLinks(!showLinks);
+
+  const { setShowConnectWallet } = useContext(WalletModal);
+
+  // Handle Wallets modal display
+  const handleShowModal = () => {
+    setShowConnectWallet((prevState) => !prevState);
+    // alert("modal opened");
+  };
 
   return (
     <>
@@ -77,11 +86,10 @@ const Navbar = () => {
 
           <motion.button
             className="px-[23px] py-2 btn-primary rounded-[20px] text-white block"
-          /*  onClick={window['Connect']}
-            id={'connect'}*/
             whileTap={{ scale: 0.9 }}
+            onClick={handleShowModal}
           >
-           Connect 
+            Connect
           </motion.button>
         </nav>
       </header>
