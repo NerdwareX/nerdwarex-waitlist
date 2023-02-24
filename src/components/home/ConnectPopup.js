@@ -54,7 +54,7 @@ function ConnectPopup() {
             </motion.button>
           </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>
