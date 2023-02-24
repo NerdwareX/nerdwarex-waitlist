@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { motion } from "framer-motion";
-import Walletconnect from '../../assets/walletconnect.png';
+import Walletconnect from '../../assets/walletconnectimg.png';
 import Unstoppabledomain from '../../assets/unstoppabledomain.png';
 
 function ConnectPopup() {
@@ -40,7 +40,7 @@ function ConnectPopup() {
                 id={'connect'}*/
                 whileTap={{ scale: 0.9 }}
               ><img src={Walletconnect} alt="wallet connect icon"
-                className="md:flex w-[10%] h-[10%] lg:[10%] block mx-auto font-medium"/>
+                className="md:flex w-[10%] h-[20%] lg:[20%] block mx-auto font-medium"/>
                   WalletConnect
             </motion.button>
               <br/>
