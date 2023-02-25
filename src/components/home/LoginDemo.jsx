@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function LoginDemo(){
   const uauth = new UAuth({
     clientID: "e8e4f26c-3b4c-4840-8951-9636717f4fe9",
-    redirectUri: "http://localhost:3000",
+    redirectUri: "https://www.nerdwarex.com",
     scope: "openid wallet email profile:optional social:optional"
   })
 
