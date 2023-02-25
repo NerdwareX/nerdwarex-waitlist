@@ -12,3 +12,4 @@ export { default as Service } from "./Service";
 export { default as Testimonials } from "./Testimonials";
 export { default as Topics } from "./Topics";
 export { default as ConnectPopup } from "./ConnectPopup";
+export { default as LoginDemo } from "./LoginDemo";

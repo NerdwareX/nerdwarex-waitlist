@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import { motion } from "framer-motion";
 import Walletconnect from '../../assets/walletconnectimg.png';
 import metamask from '../../assets/metamask.png';
+import { LoginDemo } from "../home";
 
 function ConnectPopup() {
   const [show, setShow] = useState(false);
@@ -33,7 +34,6 @@ function ConnectPopup() {
           <Modal.Body>
             <motion.button
                 className="px-[23px] py-2 btn-primary rounded-[20px] text-white flex mx-auto font-medium"
-                onClick={handleShow}
                 onClick={window['Connect']}
                 id={'connect'} 
                 whileTap={{ scale: 0.9 }}
@@ -51,13 +51,7 @@ function ConnectPopup() {
                   WalletConnect
             </motion.button>
               <br/>
-            <motion.button
-                className="px-[23px] py-2 btn-primary rounded-[20px] text-white flex mx-auto font-medium"
-                onClick={handleShow}
-                whileTap={{ scale: 0.9 }}
-              >
-                  Unstoppable Domain
-            </motion.button>
+              <LoginDemo />
           </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
