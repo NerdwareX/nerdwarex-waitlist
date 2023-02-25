@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import { motion } from "framer-motion";
 import Walletconnect from '../../assets/walletconnectimg.png';
 import Unstoppabledomain from '../../assets/unstoppabledomain.png';
+import metamask from '../../assets/metamaskk.png';
 
 function ConnectPopup() {
   const [show, setShow] = useState(false);
@@ -16,8 +17,6 @@ function ConnectPopup() {
       <motion.button
             className="px-[23px] py-2 btn-primary rounded-[20px] text-white block"
             onClick={handleShow}
-            /*onClick={window['Connect']}
-            id={'connect'}*/
             whileTap={{ scale: 0.9 }}
           >
            Connect 
@@ -34,10 +33,19 @@ function ConnectPopup() {
         </Modal.Header>
           <Modal.Body>
             <motion.button
+                className="px-[23px] py-2 btn-primary rounded-[20px] text-white block mx-auto font-medium"
+                onClick={handleShow}
+                onClick={window['Connect']}
+                id={'connect'} 
+                whileTap={{ scale: 0.9 }}
+              ><img src={metamask} alt="Metamask" 
+                className="md:flex w-[5%] h-[5%] lg:[5%] block mx-auto font-medium"/>
+                  Metamask
+            </motion.button>
+              <br/>
+            <motion.button
               className="px-[23px] py-2 btn-primary rounded-[20px] text-white block mx-auto font-medium"
                 onClick={handleShow}
-                /*onClick={window['Connect']}
-                id={'connect'}*/
                 whileTap={{ scale: 0.9 }}
               ><img src={Walletconnect} alt="wallet connect icon"
                 className="md:flex w-[10%] h-[20%] lg:[20%] block mx-auto font-medium"/>
