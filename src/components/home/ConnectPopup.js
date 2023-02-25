@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { motion } from "framer-motion";
 import Walletconnect from '../../assets/walletconnectimg.png';
-import Unstoppabledomain from '../../assets/unstoppabledomain.png';
 import metamask from '../../assets/metamask.png';
 
 function ConnectPopup() {
