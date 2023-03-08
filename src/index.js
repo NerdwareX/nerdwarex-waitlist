@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ToastContainer closeOnClick={false} hideProgressBar />
+    <ToastContainer closeOnClick={false} />
     <App />
   </React.StrictMode>
 );
