@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* desktop */}
-      <header className="w-full py-[41px] flex items-center fixed top-0 2xl:px-[186px] lg:px-20 px-8 bg-[#000074] z-[150]">
+      <header className="w-full py-[41px] px-3 flex items-center fixed top-0 bg-[#000074] z-[150] md:px-16 lg:px-20 2xl:px-[186px]">
         <nav className="w-full h-full flex items-center sm:justify-between justify-around">
           {/* left */}
           {/* hamburger-menu */}

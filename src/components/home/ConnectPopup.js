@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
+import UAuth from "@uauth/js";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 import Walletconnect from "../../assets/walletconnectimg.png";
 import metamask from "../../assets/metamask.png";
 import { LoginDemo } from "../home";
@@ -14,8 +16,69 @@ function ConnectPopup() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // Initialize UAuth for Unstoppable Domains
+  const uauth = new UAuth({
+    clientID: "e8e4f26c-3b4c-4840-8951-9636717f4fe9",
+    redirectUri: "https://www.nerdwarex.com",
+    scope: "openid wallet email profile:optional social:optional",
+  });
+  
+  // Login
+  const login = () => {
+    try {
+      uauth.loginWithPopup().then((authorization) => {
+        setUserActive(true);
+        // Toast Notification
+        toast.success("Logged in Successfully!", {
+          pauseOnHover: false,
+        });
+      });
+    } catch (error) {
+      setUserActive(false);
+      toast.error("Error logging in!", {
+        pauseOnHover: false,
+      });
+      console.error(error);
+    }
+  };
+
+  // Logout
+  const logout = async () => {
+    try {
+      await uauth.logout();
+      // Toast Notification
+      toast.success("Logged out!", {
+        pauseOnHover: false,
+      });
+      setUserActive(false);
+    } catch (error) {
+      // Toast Notification
+      toast.error("Error Logging out!", {
+        pauseOnHover: false,
+      });
+      setUserActive(true);
+    }
+  };
+
+  // Check if user is logged in
+  useEffect(() => {
+    uauth
+      .user()
+      .then((user) => {
+        // user exists
+        setUserActive(true);
+        setDomainName(user.sub);
+      })
+      .catch((err) => {
+        // user does not exist
+        setUserActive(false);
+        console.error(err);
+      });
+
+  })
+
   return (
-    <>
+    <div className="ml-10">
       <motion.button
         className="px-[23px] py-2 btn-primary rounded-[20px] text-white block"
         onClick={handleShow}
@@ -75,7 +138,8 @@ function ConnectPopup() {
             userActive={userActive}
             setUserActive={setUserActive}
             domainName={domainName}
-            setDomainName={setDomainName}
+            login={login}
+            logout={logout}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -84,7 +148,7 @@ function ConnectPopup() {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 }
 
